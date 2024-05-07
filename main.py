@@ -1,3 +1,5 @@
+score = 0
+
 # Ask the user thier name and save it 
 name = input("what's your name?")
 # Greet the user and the introduce the quiz
@@ -10,6 +12,9 @@ answer = input("what is the most expinse car ")
 # Tell them the correct answer 
 if answer == "rolls-royce droptail":
     print("The most expensive car is rolls-royce droptail it cost 30 million plus. You are correct!")
+elif answer == "":
+    print(" you dont know ")
+    score +-5
 else:
     print("The most expensive car is rolls-royce droptail it cost 30 million plus. You are incorrect")
 
