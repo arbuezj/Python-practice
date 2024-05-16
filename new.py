@@ -7,10 +7,16 @@ name = input("what's your name?")
 # Greet the user and the introduce the quiz
 print("welcome to the quiz",name)
 
-print("This quiz is about type of car")
+print("This quiz is about type of car") 
+# Check number of question attempts
+while True:
+    try: 
+        tries = input("how many attemps do you want at each question? 1-4")
+        tries = int (tries)
+        break
+    except:
+        print("That's not a number ")
 
-tries = input("how many attemps do you want at each question? 1-4")
-tries = tries - 1
 
 # Ask the user a question 
 while play == "yes" :
@@ -34,6 +40,7 @@ while play == "yes" :
 
     #end the quiz
     print("Well done{} thank you for playing thats end .Your final score was {} ".format (name,score))
-
+    
+    #replay 
     play = input("do you want to play agin?").lower()
 
