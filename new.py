@@ -1,4 +1,8 @@
+import random
+
 score = 0
+GOOD_COMMENTS = ["Way to go!", "Keep it up!","Fantastic!"]
+BAD_COMMENTS =  ["Keep trying!", "Maybe next time!", "Dont give up "]
 QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
 play = "yes" 
 
@@ -25,17 +29,22 @@ while play == "yes" :
     b = "Honda Civic"
     c = "Pajero Sport"
     d = "Rolls-royce droptail"
+
+    
+
     answer = input(QUESTION_FORMAT.format(question , a, b, c ,d)).lower()
     # Tell them the correct answer 
     if answer == d.lower() or answer == "d":
         print("The most expensive car is rolls-royce droptail it cost 30 million plus. You are correct!")
         score +=10
+        print(random.choice(GOOD_COMMENTS))
     elif answer == "":
         print(" you dont know ")
     elif answer != a and answer != "a" and answer != b and answer != "b" and answer != c and answer != "c":
         print (" that's not a option")
     else:
         print ("Wrong!")
+        print (random.choice(BAD_COMMENTS))
         print("The most expensive car is rolls-royce droptail it cost 30 million plus. You are incorrect")
 
     #end the quiz
