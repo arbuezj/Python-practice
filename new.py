@@ -1,9 +1,18 @@
 import random
 
 score = 0
+QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
 GOOD_COMMENTS = ["Way to go!", "Keep it up!","Fantastic!"]
 BAD_COMMENTS =  ["Keep trying!", "Maybe next time!", "Dont give up "]
-QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
+QUESTION = ["What car is the most expensive car?",
+            "who is the goat in nba?",
+             "who is mvp last year in basketball"]
+OPTION =  [["Lamborgini", "honda civic","pajero sport","Rolys royce "],
+            ["Lebron james" ,"stephen curry" , "michael jordan","jordan clarckson"],
+             [" Giannis Antetokoumpo" ,"lebron james","bronny jamess","seth curry "]]
+SHORT_OPTIONS = ["a" "b" "c" "d"]
+ANSWER = [3,2,0]
+
 play = "yes" 
 
 # Ask the user thier name and save it 
