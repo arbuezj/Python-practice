@@ -19,7 +19,6 @@ play = "yes"
 name = input("what's your name?")
 # Greet the user and the introduce the quiz
 print("welcome to the quiz",name)
-
 print("This quiz is about type of car") 
 # Check number of question attempts
 while True:
@@ -30,7 +29,12 @@ while True:
     except:
         print("That's not a number ")
 
+# Start the quiz 
+while play == "yes" :
+      score = 0
 
+    # loop thourgh each question/answer 
+    
 # Ask the user a question 
 while play == "yes" :
     question= "What is the most expinsive car?"
@@ -39,7 +43,6 @@ while play == "yes" :
     c = "Pajero Sport"
     d = "Rolls-royce droptail"
 
-    
 
     answer = input(QUESTION_FORMAT.format(question , a, b, c ,d)).lower()
     # Tell them the correct answer 
